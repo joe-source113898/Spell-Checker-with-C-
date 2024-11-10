@@ -35,20 +35,13 @@ A simple command-line interface (CLI) application for checking the spelling of w
 - spell_checker.cpp: Main program file containing the logic for loading the dictionary, checking spelling, and generating suggestions.
 - dictionary.txt: A text file containing valid words (one word per line). This file is required for the spell checker to work.
 
-# How it works
+## How it works
 - Dictionary loading: The program loads all words from dictionary.txt into an unordered_set for quick lookups.
 - Spelling check: The program checks if the input word is present in the dictionary.
 - Suggestion generation: If the word is not found, the program suggests alternative words by replacing each letter with every letter in the alphabet and checking if the result is in the dictionary.
 
 ## Example dictionary file
 Make sure to include a dictionary.txt file in the same directory as spell_checker.cpp. Here’s an example content:
-```bash
-cat
-cot
-cut
-bat
-rat
-...
 
 ## Potential improvements
 - Implement more advanced suggestion algorithms (e.g., Levenshtein distance).
